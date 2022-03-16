@@ -1,0 +1,29 @@
+sox \
+    --i \
+    "audio/songs/conversation.mp3"
+    
+// padronização
+sox \
+    -v 0.99 \
+    -t mp3 \
+    "audio/songs/conversation.mp3" \
+    -r 48000 \
+    -t mp3 \
+    "output.mp3"
+
+// obter o bitrate
+sox \
+    --i \
+    -B \
+    "audio/songs/conversation.mp3"
+
+// concatenar dois audios
+sox \
+    -t mp3 \
+    -v 0.99 \
+    -m "audio/songs/conversation.mp3" \
+    -t mp3 \
+    -v 0.99 \
+    "audio/fx/Fart - Gaming Sound Effect (HD) (128 kbps).mp3" \
+    -t mp3 \
+    "output.mp3"
