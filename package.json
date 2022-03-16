@@ -10,7 +10,7 @@
     "test:coverage": "set LOG_DISABLED=true && set NODE_OPTIONS=--experimental-vm-modules --no-warnings && npx jest --runInBand --no-cache --coverage tests/unit",
     "test:docker": "LOG_DISABLED=true NODE_OPTIONS=--experimental-vm-modules jest --no-cache",
     "start": "node server/index.js",
-    "start-watch": "nodemon server/index.js",
+    "start-watch": "nodemon -L server/index.js",
     "start-watch-docker": "docker-compose up --build start-watch"
   },
   "repository": {
