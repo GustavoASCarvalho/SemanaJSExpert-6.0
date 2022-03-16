@@ -48,7 +48,6 @@ export class Service {
         try {
             const args = ['--i', '-B', song]
 
-            logger.info('as')
             const {
                 stderr, // error
                 stdout, // output

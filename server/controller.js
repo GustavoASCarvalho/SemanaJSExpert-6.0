@@ -1,4 +1,5 @@
 import { Service } from './service.js'
+import { logger } from './utils.js'
 
 export class Controller {
     constructor() {
