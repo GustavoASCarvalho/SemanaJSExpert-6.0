@@ -11,7 +11,7 @@ services:
       - start-watch
     volumes:
       - .:/spotify-radio
-      - node_modules:spotify-radio/node_modules
+      -  node_modules:/spotify-radio/node_modules
     ports:
       - 3000:3000
 volumes:
