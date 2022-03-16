@@ -11,7 +11,7 @@
     "test:docker": "LOG_DISABLED=true NODE_OPTIONS=--experimental-vm-modules jest --no-cache",
     "start": "node server/index.js",
     "start-watch": "nodemon server/index.js",
-    "start-watch-docker": "docker-compose up start-watch"
+    "start-watch-docker": "docker-compose up --build start-watch"
   },
   "repository": {
     "type": "git",
@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "pino": "^7.8.0",
-    "pino-pretty": "^7.5.3"
+    "pino-pretty": "^7.5.3",
+    "throttle": "^1.0.3"
   }
 }
