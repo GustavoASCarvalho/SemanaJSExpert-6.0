@@ -47,7 +47,7 @@ async function routes(request, response) {
 
     if (method === 'POST' && url === '/controller') {
         const data = await once(request, 'data')
-        const item = JSON.parse(data)
+        const item = await JSON.parse(data)
         const result = await controllerInstance.handleCommand(item)
 
         return response.end(JSON.stringify(result))
